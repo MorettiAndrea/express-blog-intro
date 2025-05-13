@@ -1,5 +1,5 @@
 const express = require("express");
-const iMieiPost = require("./array");
+const Posts = require("./posts");
 const app = express();
 const port = 3000;
 const localHost = `http://localhost:${port}`;
@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/Bacheca", (req, res) => {
-  res.json(iMieiPost);
+  res.json(Posts);
 });
 
 app.listen(port, () => {

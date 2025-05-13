@@ -1,7 +1,7 @@
 const port = 3000;
 const localHost = `http://localhost:${port}`;
 
-const iMieiPost = [
+const Posts = [
   {
     id: 1,
     titolo: "Il ciambellone",
@@ -38,4 +38,5 @@ const iMieiPost = [
     tags: ["torte", "ricette"],
   },
 ];
-module.exports = iMieiPost;
+
+module.exports = Posts;
